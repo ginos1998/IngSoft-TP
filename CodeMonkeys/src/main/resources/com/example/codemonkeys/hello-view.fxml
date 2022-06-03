@@ -1,16 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.codemonkeys.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.codemonkeys.HelloController">
+    <children>
+        <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true">
+            <image>
+                <Image url="@media/images/bG6mNA.png" />
+            </image>
+        </ImageView>
+        <Button layoutX="375.0" layoutY="560.0" mnemonicParsing="false" onAction="#irAPersonajes" text="Jugar" />
+        <Button layoutX="14.0" layoutY="556.0" mnemonicParsing="false" onAction="#irAConfig" prefHeight="11.0" prefWidth="13.0">
+            <graphic>
+                <ImageView fitHeight="111.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@media/images/gear-icon.png" />
+                    </image>
+                </ImageView>
+            </graphic></Button>
+        <Button layoutX="741.0" layoutY="560.0" mnemonicParsing="false" onAction="#salir" text="Salir" />
+        <ImageView fitHeight="336.0" fitWidth="706.0" layoutX="48.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@media/images/FakemonLogoHD-removebg-preview.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>
