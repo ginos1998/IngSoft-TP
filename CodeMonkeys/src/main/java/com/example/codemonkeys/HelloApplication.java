@@ -29,5 +29,10 @@ public class HelloApplication extends Application {
         stage.setScene(scene);
         stage.setTitle("Fakemon");
         stage.show(); // Muestra la ventana
+        playSound();
+    }
+
+    public void playSound(){
+
     }
 }
